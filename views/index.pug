@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  h1= title
+    each message in messages
+      li= `[${message.added}] ${message.user}: ${message.text}`
+    button: a(href='/new') Add New Message

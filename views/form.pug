@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  form(method='POST' action='/new')
+    h1 New Message
+    input(name='messageUser' placeholder='Enter your name')
+    input(name='messageText' placeholder='Enter your message here.')
+    button Submit
+  button: a(href='/') Back
